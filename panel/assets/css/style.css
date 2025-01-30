@@ -1,0 +1,424 @@
+/* Genel Stiller */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Butonlar arasÄ± boÅŸluk */
+    display: inline-block; /* ButonlarÄ± yan yana getirmek iÃ§in */
+}
+
+.button:hover {
+    background-color: #c9302c;
+}
+
+.button-group {
+    margin-bottom: 10px; /* Buton gruplarÄ± arasÄ± boÅŸluk */
+}
+
+/* Header Stilleri */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-bottom: 0; /* Alt boÅŸluÄŸu sÄ±fÄ±rla */
+}
+
+header .logo {
+    float: left;
+}
+
+header .logo a {
+    font-weight: 700;
+    font-size: 24px;
+    color: #d9534f;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav li a {
+    font-weight: 600;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+    
+}
+
+header nav li a:hover {
+    background-color: #f8f9fa;
+}
+
+/* Panel Header Stilleri */
+body.panel-login-page header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
+}
+
+body.panel-login-page header .container {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+body.panel-login-page .logo a {
+    font-size: 1.8em;
+    color: #d9534f;
+}
+
+body.panel-login-page nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+body.panel-login-page nav li {
+    margin-left: 20px; /* MenÃ¼ Ã¶ÄŸeleri arasÄ±ndaki boÅŸluk */
+}
+
+body.panel-login-page nav li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Panel SayfalarÄ± Ä°Ã§in Genel Stil */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;
+}
+
+/* Sidebar Stilleri */
+.sidebar {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  color: #d9534f;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar li a:hover {
+  background-color: #f8f9fa;
+}
+
+/* Ä°Ã§erik AlanÄ± Stilleri */
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content h1, .content h2 {
+  margin-top: 0;
+}
+
+/* ÃœrÃ¼n Listesi Tablo Stilleri */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #f4f4f4;
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+table tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Form Stilleri */
+.content form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.content form input[type="text"],
+.content form input[type="email"],
+.content form input[type="password"],
+.content form input[type="number"],
+.content form input[type="file"],
+.content form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.content form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #d9534f;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.content form input[type="submit"]:hover {
+    background-color: #c9302c;
+}
+
+/* Hata ve BaÅŸarÄ± MesajlarÄ± */
+.error, .success {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.error {
+    background-color: #fdd;
+    border: 1px solid #faa;
+    color: #a00;
+}
+
+.success {
+    background-color: #dfd;
+    border: 1px solid #afa;
+    color: #0a0;
+}
+
+/* Footer Stilleri */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #555;
+}
+
+/* GiriÅŸ Formu Stilleri (panel/index.php) */
+body.panel-login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body.panel-login-page header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0; /* Header ile login-container arasÄ±ndaki boÅŸluÄŸu kaldÄ±r */
+}
+
+body.panel-login-page header .container {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+body.panel-login-page .logo a {
+    font-size: 1.8em;
+    color: #d9534f;
+}
+
+body.panel-login-page nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+body.panel-login-page nav li {
+    margin-left: 20px; /* MenÃ¼ Ã¶ÄŸeleri arasÄ±ndaki boÅŸluk */
+}
+
+body.panel-login-page nav li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+body.panel-login-page .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+body.panel-login-page .login-container h2 {
+  color: #d9534f;
+}
+
+body.panel-login-page .button {
+  background-color: #333;
+}
+
+body.panel-login-page footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+body.panel-login-page footer p {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-container .button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #d9534f;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-container .button:hover {
+  background-color: #c9302c;
+}
+
+.login-container .error {
+  color: #d9534f;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px; /* Butonlar arasÄ±ndaki boÅŸluk */
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
